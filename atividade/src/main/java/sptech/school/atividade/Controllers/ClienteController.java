@@ -10,7 +10,7 @@ import sptech.school.atividade.UseCases.ClienteService;
 
 @RestController
 @RequestMapping("/clientes")
-public class Controller {
+public class ClienteController {
 
     @Autowired
     private ClienteService clienteService;

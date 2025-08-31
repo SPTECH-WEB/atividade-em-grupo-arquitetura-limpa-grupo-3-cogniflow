@@ -32,8 +32,6 @@ public class ClienteService {
     }
 
     public Entity calcularRisco(Entity cliente, RendaMensal renda){
-        Risco riscoMedio = Risco.MEDIO;
-        Risco riscoAlto = Risco.ALTO;
 
         if(cliente.getIdade() > 30 && renda.getSalario() > 6000){
             cliente.setRisco(Risco.BAIXO);

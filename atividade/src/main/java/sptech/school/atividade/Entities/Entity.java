@@ -7,13 +7,15 @@ public class Entity {
     private String email;
     private String telefone;
     private Integer idade;
+    private Risco risco;
 
-    public Entity(Integer id, String nome, String email, String telefone, Integer idade) {
+    public Entity(Integer id, String nome, String email, String telefone, Integer idade, Risco risco) {
         this.id = id;
         this.nome = nome;
         this.email = email;
         this.telefone = telefone;
         this.idade = idade;
+        this.risco = risco;
     }
 
     public Integer getId() {
@@ -55,6 +57,10 @@ public class Entity {
     public void setIdade(Integer idade) {
         this.idade = idade;
     }
+
+    public Risco getRisco() { return  risco; }
+
+    public void setRisco(Risco risco) { this.risco = risco; }
 
         public void validarCampos() {
             validarNome();

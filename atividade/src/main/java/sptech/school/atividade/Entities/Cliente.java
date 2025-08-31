@@ -1,6 +1,6 @@
 package sptech.school.atividade.Entities;
 
-public class Entity {
+public class Cliente {
 
     private Integer id;
     private String nome;
@@ -9,7 +9,7 @@ public class Entity {
     private Integer idade;
     private Risco risco;
 
-    public Entity(Integer id, String nome, String email, String telefone, Integer idade, Risco risco) {
+    public Cliente(Integer id, String nome, String email, String telefone, Integer idade, Risco risco) {
         this.id = id;
         this.nome = nome;
         this.email = email;

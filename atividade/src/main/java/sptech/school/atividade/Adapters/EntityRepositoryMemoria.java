@@ -1,17 +1,17 @@
 // Arquivo: EntityRepositoryMemoria.java
 package sptech.school.atividade.Adapters;
 
-import sptech.school.atividade.Entities.Entity;
+import sptech.school.atividade.Entities.Cliente;
 import sptech.school.atividade.Interfaces.EntityRepositoryPort;
 import java.util.*;
 
 public class EntityRepositoryMemoria implements EntityRepositoryPort {
-    private final Map<Integer, Entity> armazenamento = new HashMap<>();
+    private final Map<Integer, Cliente> armazenamento = new HashMap<>();
     private Integer contadorId = 0;
 
 
     @Override
-    public Entity save(Entity cliente) {
+    public Cliente save(Cliente cliente) {
         if (cliente.getId() == null) {
             cliente.setId(++contadorId);
         }
@@ -19,7 +19,7 @@ public class EntityRepositoryMemoria implements EntityRepositoryPort {
         return cliente;
     }
     @Override
-    public Optional<Entity> findById(Integer id) {
+    public Optional<Cliente> findById(Integer id) {
         return Optional.ofNullable(armazenamento.get(id));
     }
 }

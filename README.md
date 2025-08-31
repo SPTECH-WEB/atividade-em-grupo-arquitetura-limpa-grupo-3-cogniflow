@@ -7,6 +7,23 @@ A solução foi pensada para ser **modular, extensível e preparada para integra
 
 ---
 
+## 🔹 Integrantes
+- Bianca Alves Pinheiro
+- Gabriel Nogueira
+- Isaias Oliveira
+- Matheus Marques
+
+## 🔹 Divisão de Tarefas
+- Isaias Oliveira: Implementação da camada Controller e DTOs
+- Gabriel Nogueira: Service e regras de cálculo de risco
+- Matheus Marques: Entidades e validação de campos
+- Bianca Alves: Implementação do Adapter e Interface
+
+- ## 🔹 Instrução de execução
+1. Clone o nosso repositório em sua máquina 💻
+
+git clone https://github.com/atividade-em-grupo-arquitetura-limpa-grupo-3-cogniflow
+
 ## 🧠 Contexto
 
 Uma fintech está desenvolvendo um sistema para facilitar a **análise de crédito de novos clientes**. O objetivo desta API é permitir:
